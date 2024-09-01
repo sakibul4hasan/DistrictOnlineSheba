@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Doner_Details"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/doner_d_style"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/dName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: Sakibul Hasan"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/dBlood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Group: A+"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/dLBD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Blood Donate: 07/06/2023"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/dMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile: 01319093133"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/dEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: shakibofficial06@gmail.com"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:background="#E4F3FF"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/dAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: Oskhali, Puran Bazer, Hatiya"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:background="#FFE8E0"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:neumorph_shapeType="pressed"
+            android:layout_margin="15dp"
+            app:neumorph_backgroundColor="#20BF55"
+            >
+            <LinearLayout
+                android:id="@+id/call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CALL"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:neumorph_shapeType="pressed"
+            android:layout_margin="15dp"
+            app:neumorph_backgroundColor="#F1BA6A"
+            >
+            <LinearLayout
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="MESSAGE"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

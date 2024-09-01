@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HatiyaOnlineSheba" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/statusBarColor</item>
+    </style>
+
+    <style name="Theme.HatiyaOnlineSheba" parent="Base.Theme.HatiyaOnlineSheba" />
+
+
+
+
+
+    //===================================================
+    <style name="CustomShapeAppearance">
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_cornerSizeTopLeft">10dp</item>
+        <item name="neumorph_cornerSizeTopRight">10dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">10dp</item>
+        <item name="neumorph_cornerSizeBottomRight">10dp</item>
+    </style>
+    //===================================================
+
+
+
+
+    //---------------------------------------------------
+    <style name="InternetDialog">
+        <item name="android:windowIsFloating">false</item>
+        ...
+    </style>
+    //---------------------------------------------------
+
+
+
+
+
+</resources>
